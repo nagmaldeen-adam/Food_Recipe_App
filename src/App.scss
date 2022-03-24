@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.app{
+    min-height:100vh;
+    width:100%;
+    .app-container{
+     width:85%;
+     margin:auto;
+     .form-container{
+         width:100%;
+     form{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden;
+        width:100%;
+        @media screen and (max-width:540px){
+            gap:4%;
+        }
+        
+     .input{
+        border:none;
+        padding:20px;
+        width:91%;
+        margin-top:20px;
+        font-size:20px;
+        background-color:#777;
+        font-weight:bold;
+        outline:none;
+        border-radius:5px;
+        color:white;
+      &::placeholder{
+        color:white;
+        font-size:20px;
+        font-weight:bold;
+        text-transform:capitalize;
+    }
+    @media screen and (max-width:540px){
+      width:70%; 
+      padding: 10px 20px;     
+    }
+    }
+    .button{
+        padding:21px 5px;
+        margin-top:20px;
+        outline:none;
+        border:none;
+        background-color:#777;
+        color:white;
+        font-size:20px;
+        width:5%;
+        border-radius:5px;
+        margin-left:5px;
+        .icon{
+            top:35%;
+        }
+        @media screen and (max-width:540px){
+            width:10%; 
+            padding: 10px 5px;     
+
+        }
+    }
+    }
+}
+   .recipe-container{
+    display:grid;
+    grid-template-columns:500px 500px;
+    grid-template-columns:repeat(auto-fill,minmax(450px ,1fr));
+    align-items:center;
+    align-self: center;
+    width:100%;
+    overflow:hidden;
+    flex-wrap:nowrap;
+    @media screen and (max-width:540px){
+        grid-template-columns:repeat(auto-fill,minmax(90% ,1fr));
+
+    }
+}
+
+}
+}
+
+
